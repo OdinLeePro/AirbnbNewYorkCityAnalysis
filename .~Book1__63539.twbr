@@ -1,0 +1,1571 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CascadingFilters />
+    <LayerControlWidget />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='AirbnbNewYorkDataCleaned' inline='true' name='federated.13jmb040pdfl3712gnlb50emgpqw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AirbnbNewYorkDataCleaned' name='textscan.0fwlrs608ary0r160vh710fg0hn1'>
+            <connection class='textscan' directory='/Users/School/Documents/St. Thomas Classes/Data Analytics &amp; Visualization/Midterm Project' filename='AirbnbNewYorkDataCleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fwlrs608ary0r160vh710fg0hn1' name='AirbnbNewYorkDataCleaned.csv' table='[AirbnbNewYorkDataCleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ListingID' ordinal='0' />
+            <column datatype='string' name='ListingName' ordinal='1' />
+            <column datatype='integer' name='HostID' ordinal='2' />
+            <column datatype='string' name='HostIdentify' ordinal='3' />
+            <column datatype='string' name='HostFirstName' ordinal='4' />
+            <column datatype='string' name='Burough' ordinal='5' />
+            <column datatype='string' name='Neighborhood' ordinal='6' />
+            <column datatype='real' name='Latitude' ordinal='7' />
+            <column datatype='real' name='Longitude' ordinal='8' />
+            <column datatype='string' name='Country' ordinal='9' />
+            <column datatype='string' name='CountryCode' ordinal='10' />
+            <column datatype='boolean' name='InstatlyBookable' ordinal='11' />
+            <column datatype='string' name='CancellationPolicy' ordinal='12' />
+            <column datatype='string' name='RoomType' ordinal='13' />
+            <column datatype='integer' name='YearBuilt' ordinal='14' />
+            <column datatype='real' name='PricePerNight' ordinal='15' />
+            <column datatype='real' name='ServiceFee' ordinal='16' />
+            <column datatype='integer' name='MinimumNights' ordinal='17' />
+            <column datatype='integer' name='NumberOfReviews' ordinal='18' />
+            <column datatype='date' name='LastReview' ordinal='19' />
+            <column datatype='real' name='ReviewsPerMonth' ordinal='20' />
+            <column datatype='integer' name='ReviewRatings' ordinal='21' />
+            <column datatype='integer' name='CalculatedHostListingsCount' ordinal='22' />
+            <column datatype='integer' name='Availability365' ordinal='23' />
+            <column datatype='string' name='HouseRules' ordinal='24' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ListingID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ListingID]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>ListingID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ListingName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ListingName]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>ListingName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HostID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HostID]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>HostID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HostIdentify</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HostIdentify]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>HostIdentify</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HostFirstName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HostFirstName]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>HostFirstName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Burough</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Burough]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Burough</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Neighborhood]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Neighborhood</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountryCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountryCode]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>CountryCode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InstatlyBookable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[InstatlyBookable]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>InstatlyBookable</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CancellationPolicy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CancellationPolicy]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>CancellationPolicy</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoomType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoomType]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>RoomType</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBuilt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearBuilt]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>YearBuilt</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PricePerNight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PricePerNight]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>PricePerNight</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ServiceFee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ServiceFee]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>ServiceFee</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MinimumNights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MinimumNights]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>MinimumNights</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfReviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberOfReviews]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>NumberOfReviews</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastReview</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[LastReview]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>LastReview</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReviewsPerMonth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ReviewsPerMonth]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>ReviewsPerMonth</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReviewRatings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ReviewRatings]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>ReviewRatings</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CalculatedHostListingsCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CalculatedHostListingsCount]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>CalculatedHostListingsCount</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Availability365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Availability365]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>Availability365</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseRules</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HouseRules]</local-name>
+            <parent-name>[AirbnbNewYorkDataCleaned.csv]</parent-name>
+            <remote-alias>HouseRules</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[CalculatedHostListingsCount]' role='measure' type='quantitative' />
+      <column caption='Cancellation Policy' datatype='string' name='[CancellationPolicy]' role='dimension' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[CountryCode]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Host First Name' datatype='string' name='[HostFirstName]' role='dimension' type='nominal' />
+      <column caption='Host ID' datatype='integer' name='[HostID]' role='dimension' type='ordinal' />
+      <column caption='Host Identify' datatype='string' name='[HostIdentify]' role='dimension' type='nominal' />
+      <column caption='House Rules' datatype='string' name='[HouseRules]' role='dimension' type='nominal' />
+      <column caption='Instatly Bookable' datatype='boolean' name='[InstatlyBookable]' role='dimension' type='nominal' />
+      <column caption='Last Review' datatype='date' name='[LastReview]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Listing ID' datatype='integer' name='[ListingID]' role='dimension' type='ordinal' />
+      <column caption='Listing Name' datatype='string' name='[ListingName]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[MinimumNights]' role='measure' type='quantitative' />
+      <column caption='Number Of Reviews' datatype='integer' name='[NumberOfReviews]' role='measure' type='quantitative' />
+      <column caption='Price Per Night' datatype='real' name='[PricePerNight]' role='measure' type='quantitative' />
+      <column caption='Review Ratings' datatype='integer' name='[ReviewRatings]' role='measure' type='quantitative' />
+      <column caption='Reviews Per Month' datatype='real' name='[ReviewsPerMonth]' role='dimension' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[RoomType]' role='dimension' type='nominal' />
+      <column caption='Service Fee' datatype='real' name='[ServiceFee]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YearBuilt]' role='dimension' type='quantitative' />
+      <column caption='AirbnbNewYorkDataCleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]' role='measure' type='quantitative' />
+      <column-instance column='[PricePerNight]' derivation='Avg' name='[avg:PricePerNight:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ServiceFee]' derivation='Avg' name='[avg:ServiceFee:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ServiceFee]' derivation='Sum' name='[sum:ServiceFee:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Burough)' hidden='true' name='[Action (Burough)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Burough]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Latitude,Longitude)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Latitude:qk]' />
+          <groupfilter function='level-members' level='[none:Longitude:qk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Locations'>
+          <field>[CountryCode]</field>
+          <field>[Country]</field>
+          <field>[Burough]</field>
+          <field>[Neighborhood]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0yx7vcc1lyem7l10sq9320pxak94.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2025 01:12:55 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ListingID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ListingID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ListingID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97236</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ListingName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ListingName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ListingName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54204</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HostID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HostID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HostID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97236</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HostIdentify</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HostIdentify]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HostIdentify</remote-alias>
+              <ordinal>3</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HostFirstName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HostFirstName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HostFirstName</remote-alias>
+              <ordinal>4</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8007</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Burough</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Burough]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Burough</remote-alias>
+              <ordinal>5</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neighborhood</remote-alias>
+              <ordinal>6</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>397</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29251</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21429</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CountryCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CountryCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CountryCode</remote-alias>
+              <ordinal>10</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InstatlyBookable</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[InstatlyBookable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InstatlyBookable</remote-alias>
+              <ordinal>11</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CancellationPolicy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CancellationPolicy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CancellationPolicy</remote-alias>
+              <ordinal>12</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RoomType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RoomType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RoomType</remote-alias>
+              <ordinal>13</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearBuilt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearBuilt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearBuilt</remote-alias>
+              <ordinal>14</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PricePerNight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PricePerNight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PricePerNight</remote-alias>
+              <ordinal>15</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ServiceFee</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ServiceFee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ServiceFee</remote-alias>
+              <ordinal>16</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MinimumNights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MinimumNights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MinimumNights</remote-alias>
+              <ordinal>17</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumberOfReviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NumberOfReviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumberOfReviews</remote-alias>
+              <ordinal>18</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>771</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastReview</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[LastReview]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastReview</remote-alias>
+              <ordinal>19</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ReviewsPerMonth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ReviewsPerMonth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ReviewsPerMonth</remote-alias>
+              <ordinal>20</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2035</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ReviewRatings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ReviewRatings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ReviewRatings</remote-alias>
+              <ordinal>21</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CalculatedHostListingsCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CalculatedHostListingsCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CalculatedHostListingsCount</remote-alias>
+              <ordinal>22</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Availability365</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Availability365]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Availability365</remote-alias>
+              <ordinal>23</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1129</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseRules</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HouseRules]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HouseRules</remote-alias>
+              <ordinal>24</ordinal>
+              <family>AirbnbNewYorkDataCleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6404</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#e13b42'>
+              <bucket>&quot;[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:PricePerNight:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13jmb040pdfl3712gnlb50emgpqw].[sum:ServiceFee:qk]&quot;</bucket>
+            </map>
+            <map to='#fdab9b'>
+              <bucket>&quot;[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ServiceFee:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='AirbnbNewYorkDataCleaned.csv' id='AirbnbNewYorkDataCleaned.csv_40E3A0B84F164AB8927031D6E27D953F'>
+            <properties context=''>
+              <relation connection='textscan.0fwlrs608ary0r160vh710fg0hn1' name='AirbnbNewYorkDataCleaned.csv' table='[AirbnbNewYorkDataCleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ListingID' ordinal='0' />
+                  <column datatype='string' name='ListingName' ordinal='1' />
+                  <column datatype='integer' name='HostID' ordinal='2' />
+                  <column datatype='string' name='HostIdentify' ordinal='3' />
+                  <column datatype='string' name='HostFirstName' ordinal='4' />
+                  <column datatype='string' name='Burough' ordinal='5' />
+                  <column datatype='string' name='Neighborhood' ordinal='6' />
+                  <column datatype='real' name='Latitude' ordinal='7' />
+                  <column datatype='real' name='Longitude' ordinal='8' />
+                  <column datatype='string' name='Country' ordinal='9' />
+                  <column datatype='string' name='CountryCode' ordinal='10' />
+                  <column datatype='boolean' name='InstatlyBookable' ordinal='11' />
+                  <column datatype='string' name='CancellationPolicy' ordinal='12' />
+                  <column datatype='string' name='RoomType' ordinal='13' />
+                  <column datatype='integer' name='YearBuilt' ordinal='14' />
+                  <column datatype='real' name='PricePerNight' ordinal='15' />
+                  <column datatype='real' name='ServiceFee' ordinal='16' />
+                  <column datatype='integer' name='MinimumNights' ordinal='17' />
+                  <column datatype='integer' name='NumberOfReviews' ordinal='18' />
+                  <column datatype='date' name='LastReview' ordinal='19' />
+                  <column datatype='real' name='ReviewsPerMonth' ordinal='20' />
+                  <column datatype='integer' name='ReviewRatings' ordinal='21' />
+                  <column datatype='integer' name='CalculatedHostListingsCount' ordinal='22' />
+                  <column datatype='integer' name='Availability365' ordinal='23' />
+                  <column datatype='string' name='HouseRules' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.13jmb040pdfl3712gnlb50emgpqw'>
+      <datasources>
+        <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+        <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]'>
+        <groupfilter function='level-members' level='[none:Burough:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_F80A09CD6E22436EB9BBFEE1505B01B5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='AVG Price Per Night'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Book' fontsize='18'>Average Price Per Night</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+            <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Price Per Night' datatype='real' name='[PricePerNight]' role='measure' type='quantitative' />
+            <column-instance column='[PricePerNight]' derivation='Avg' name='[avg:PricePerNight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]'>
+            <groupfilter function='level-members' level='[Burough]' user:ui-action-filter='[Action1_F80A09CD6E22436EB9BBFEE1505B01B5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]</column>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:PricePerNight:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:PricePerNight:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Average Price Per Night</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ff9d9a' fontsize='24'><![CDATA[<[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:PricePerNight:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D86BE48D-7733-4DF5-B7B1-1489426BC0F4}' />
+    </worksheet>
+    <worksheet name='AVG Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Book' fontsize='18'>Average Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+            <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Review Ratings' datatype='integer' name='[ReviewRatings]' role='measure' type='quantitative' />
+            <column-instance column='[ReviewRatings]' derivation='Avg' name='[avg:ReviewRatings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]'>
+            <groupfilter function='level-members' level='[Burough]' user:ui-action-filter='[Action1_F80A09CD6E22436EB9BBFEE1505B01B5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]</column>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ReviewRatings:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='alternate-text' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ReviewRatings:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ReviewRatings:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ReviewRatings:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Average Rating</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ff9d9a' fontsize='24'><![CDATA[<[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ReviewRatings:qk]> Stars]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ff9d9a' fontname='Wingdings 3' fontsize='24'>qwertyuiopl;&apos;][kjhgfdssazxcvbnmli765432345678900</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8812C2FB-E773-44C4-B0A7-1B316B8145DA}' />
+    </worksheet>
+    <worksheet name='AVG Service Fee'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontname='Tableau Book' fontsize='18'>Average Price Per Night</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+            <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Service Fee' datatype='real' name='[ServiceFee]' role='measure' type='quantitative' />
+            <column-instance column='[ServiceFee]' derivation='Avg' name='[avg:ServiceFee:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]'>
+            <groupfilter function='level-members' level='[Burough]' user:ui-action-filter='[Action1_F80A09CD6E22436EB9BBFEE1505B01B5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]</column>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[Action (Burough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ServiceFee:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ServiceFee:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Average Service Fee</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ff9d9a' fontsize='24'><![CDATA[<[federated.13jmb040pdfl3712gnlb50emgpqw].[avg:ServiceFee:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F7E32CF9-668A-472A-A0A2-76DE62A49515}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+            <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Listing ID' datatype='integer' name='[ListingID]' role='dimension' type='ordinal' />
+            <column-instance column='[ListingID]' derivation='Count' name='[cnt:ListingID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[Latitude (generated)]</column>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[Longitude (generated)]</column>
+            <column>[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[cnt:ListingID:qk]' max='50000' min='0' num-steps='6' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='tunnel-service-link-track-case' value='true' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='true' />
+            <format attr='enabled' id='tunnel-street-case' value='true' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='true' />
+            <format attr='enabled' id='tunnel-primary-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track' value='true' />
+            <format attr='enabled' id='tunnel-street_limited' value='true' />
+            <format attr='enabled' id='tunnel-street' value='true' />
+            <format attr='enabled' id='tunnel-tertiary' value='true' />
+            <format attr='enabled' id='tunnel-secondary' value='true' />
+            <format attr='enabled' id='tunnel-primary' value='true' />
+            <format attr='enabled' id='tunnel-trunk' value='true' />
+            <format attr='enabled' id='tunnel-motorway' value='true' />
+            <format attr='enabled' id='road-street-low' value='true' />
+            <format attr='enabled' id='road-street_limited-low' value='true' />
+            <format attr='enabled' id='road-pedestrian-case' value='true' />
+            <format attr='enabled' id='road-service-link-track-case' value='true' />
+            <format attr='enabled' id='road-street_limited-case' value='true' />
+            <format attr='enabled' id='road-street-case' value='true' />
+            <format attr='enabled' id='road-tertiary-case' value='true' />
+            <format attr='enabled' id='road-secondary-case' value='true' />
+            <format attr='enabled' id='road-primary-case' value='true' />
+            <format attr='enabled' id='road-motorway_link-case' value='true' />
+            <format attr='enabled' id='road-trunk_link-case' value='true' />
+            <format attr='enabled' id='road-trunk-case' value='true' />
+            <format attr='enabled' id='road-motorway-case' value='true' />
+            <format attr='enabled' id='road-trunk_link' value='true' />
+            <format attr='enabled' id='road-motorway_link' value='true' />
+            <format attr='enabled' id='road-path' value='true' />
+            <format attr='enabled' id='road-pedestrian' value='true' />
+            <format attr='enabled' id='road-polygon' value='true' />
+            <format attr='enabled' id='road-service-link-track' value='true' />
+            <format attr='enabled' id='road-street_limited' value='true' />
+            <format attr='enabled' id='road-street' value='true' />
+            <format attr='enabled' id='road-tertiary' value='true' />
+            <format attr='enabled' id='road-secondary' value='true' />
+            <format attr='enabled' id='road-primary' value='true' />
+            <format attr='enabled' id='road-trunk' value='true' />
+            <format attr='enabled' id='road-motorway' value='true' />
+            <format attr='enabled' id='road-rail' value='true' />
+            <format attr='enabled' id='road-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-street-low' value='true' />
+            <format attr='enabled' id='bridge-street_limited-low' value='true' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='true' />
+            <format attr='enabled' id='bridge-service-link-track-case' value='true' />
+            <format attr='enabled' id='bridge-street_limited-case' value='true' />
+            <format attr='enabled' id='bridge-street-case' value='true' />
+            <format attr='enabled' id='bridge-tertiary-case' value='true' />
+            <format attr='enabled' id='bridge-secondary-case' value='true' />
+            <format attr='enabled' id='bridge-primary-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link' value='true' />
+            <format attr='enabled' id='bridge-motorway_link' value='true' />
+            <format attr='enabled' id='bridge-path' value='true' />
+            <format attr='enabled' id='bridge-pedestrian' value='true' />
+            <format attr='enabled' id='bridge-service-link-track' value='true' />
+            <format attr='enabled' id='bridge-street_limited' value='true' />
+            <format attr='enabled' id='bridge-street' value='true' />
+            <format attr='enabled' id='bridge-tertiary' value='true' />
+            <format attr='enabled' id='bridge-secondary' value='true' />
+            <format attr='enabled' id='bridge-primary' value='true' />
+            <format attr='enabled' id='bridge-trunk' value='true' />
+            <format attr='enabled' id='bridge-motorway' value='true' />
+            <format attr='enabled' id='bridge-rail' value='true' />
+            <format attr='enabled' id='bridge-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='true' />
+            <format attr='enabled' id='bridge-trunk-2' value='true' />
+            <format attr='enabled' id='bridge-motorway-2' value='true' />
+            <format attr='enabled' id='road-shields-2-white' value='true' />
+            <format attr='enabled' id='road-shields-2-black' value='true' />
+            <format attr='enabled' id='road-shields-1-white' value='true' />
+            <format attr='enabled' id='road-shields-1-black' value='true' />
+            <format attr='enabled' id='road-label-small' value='true' />
+            <format attr='enabled' id='road-label-big' value='true' />
+            <format attr='enabled' id='place-suburb' value='true' />
+            <format attr='enabled' id='place-neighborhood' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' />
+              <color column='[federated.13jmb040pdfl3712gnlb50emgpqw].[cnt:ListingID:qk]' />
+              <text column='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' />
+              <text column='[federated.13jmb040pdfl3712gnlb50emgpqw].[cnt:ListingID:qk]' />
+              <geometry column='[federated.13jmb040pdfl3712gnlb50emgpqw].[Geometry (generated)]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='18'><![CDATA[<[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='10'><![CDATA[<[federated.13jmb040pdfl3712gnlb50emgpqw].[cnt:ListingID:qk]> Airbnbs]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13jmb040pdfl3712gnlb50emgpqw].[Latitude (generated)]</rows>
+        <cols>[federated.13jmb040pdfl3712gnlb50emgpqw].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A94D1B03-A468-4EF7-8C4A-D44D667AF7D9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='AirbnbNewYorkDataCleaned' name='federated.13jmb040pdfl3712gnlb50emgpqw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13jmb040pdfl3712gnlb50emgpqw'>
+        <column datatype='string' name='[Burough]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column-instance column='[Burough]' derivation='None' name='[none:Burough:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97704' id='7' param='horz' type-v2='layout-flow' w='98754' x='623' y='1148'>
+            <zone h='97704' id='5' type-v2='layout-basic' w='86293' x='623' y='1148'>
+              <zone h='97704' id='3' name='Map' show-title='false' w='68459' x='18457' y='1148'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='97704' id='9' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='17834' x='623' y='1148'>
+                <zone fixed-size='172' h='24533' id='10' is-fixed='true' is-scaled='1' param='Image/AirbnbLogo.png' type-v2='bitmap' w='17835' x='623' y='1148'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24391' id='13' is-fixed='true' name='AVG Price Per Night' show-title='false' w='17835' x='623' y='25681'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24390' id='14' name='AVG Service Fee' show-title='false' w='17835' x='623' y='50072'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24390' id='11' name='AVG Rating' show-title='false' w='17835' x='623' y='74462'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97704' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12461' x='86916' y='1148'>
+              <zone h='23673' id='12' mode='radiolist' name='AVG Rating' param='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' type-v2='filter' values='cascading' w='12461' x='86916' y='1148'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#ff26000e' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8C4C101E-616A-43A6-AE83-64AFF93F9760}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.13jmb040pdfl3712gnlb50emgpqw].[none:Burough:nk]' type='filter' values='cascading' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+        <geo-search-visibility value='1' />
+        <default-map-tool-selection tool='2' />
+        <map-navigation value='1' />
+        <default-map-unit-selection mapunit='2' />
+        <layer-control toolbar-button-enabled='false' />
+      </viewpoint>
+      <simple-id uuid='{94A32619-C3BA-4398-A369-471EC73419E2}' />
+    </window>
+    <window class='worksheet' name='AVG Price Per Night'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{38CA09FA-AE51-484C-B868-4401F95E0863}' />
+    </window>
+    <window class='worksheet' name='AVG Service Fee'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AF36A8A3-5425-4B52-B709-9D53A846DDDD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='AVG Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C5C043E6-CDA3-4F72-9E09-E93347817549}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='AVG Price Per Night'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AVG Rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AVG Service Fee'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+          <geo-search-visibility value='1' />
+          <map-navigation value='1' />
+          <default-map-unit-selection mapunit='2' />
+          <layer-control toolbar-button-enabled='false' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{3F9AF175-FB1C-4898-B087-6E6746C6CA3B}' />
+    </window>
+  </windows>
+</workbook>
