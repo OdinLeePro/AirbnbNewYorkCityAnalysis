@@ -24,18 +24,18 @@ Core objectives included:
 
 ```
 ├── Data/
-│   ├── AirbnbNewYorkDataOriginal.csv
+│   ├── AirbnbNewYorkData.xlsx
 │   ├── AirbnbNewYorkDataCleaned.csv
-│   └── AirbnbNewYorkData.xlsx
-├── Visualizations/
-│   └── AirbnbNewYork.twbx
+│   └── AirbnbNewYorkDataOriginal.csv
 ├── Docs/
 │   ├── AirbnbNewYorkReport.docx
-│   ├── AirbnbNewYorkReport.pdf
-│   └── Presentation.MOV
+│   └── AirbnbNewYorkReport.pdf
 ├── Images/
 │   └── AirbnbLogo.png
+├── .gitattributes
+├── AirbnbNewYork.twbx
 ├── LICENSE
+├── Presentation.MOV
 ├── README.md
 ```
 
