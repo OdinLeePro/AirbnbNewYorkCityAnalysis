@@ -1,4 +1,7 @@
 # AirbnbNewYorkCityAnalysis
+
+[Dashboard](https://public.tableau.com/views/AirbnbNewYork_17608568655070/BuroughsMap?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 AirbnbNewYorkCityAnalysis is a comprehensive data analysis and visualization project exploring short-term Airbnb rental trends across New York City (2008–2022). Using open-source Airbnb data, the project combines data cleaning, statistical summaries, and Tableau dashboards to uncover pricing patterns, borough-level distribution, and market insights.
 
 ## Overview
